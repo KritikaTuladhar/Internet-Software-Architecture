@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: lightgrey;
+        margin-left: 35%;
+        margin-right: 42%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      fieldset {
+        border: 0;
+        margin-top: 4.5rem;
+        padding: 2rem 1.5rem;
+        background-color: white;
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2),
+          0 8px 22px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      label {
+        display: block;
+      }
+      .info input {
+        width: 100%;
+      }
+      select {
+        width: 100%;
+      }
+      label {
+        padding-bottom: 3px;
+        padding-top: 4px;
+      }
+      input,
+      textarea,
+      select {
+        padding: 5px;
+        color: grey;
+      }
+      .btn {
+        background-color: rgb(79, 182, 79);
+        /* margin-left: 20px; */
+        width: 100%;
+        margin-top: 10px;
+        height: 40px;
+        border: 0;
+        font-size: 15px;
+      }
+      textarea {
+        width: 100%;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset class="">
+        <label class="info"
+          >Name <br /><input
+            type="text"
+            required
+            placeholder="Enter your name"
+          />
+        </label>
+        <label class="info"
+          >Email <br /><input
+            type="mail"
+            required
+            placeholder="Enter your email"
+          />
+        </label>
+        <label class="info"
+          >Age <br /><input
+            type="number"
+            required
+            placeholder="Enter your age"
+          />
+        </label>
+        <label class="info"
+          >Which option best describe you?<br />
+          <select name="" id="">
+            <option value="">Student</option>
+            <option value="">Teacher</option>
+            <option value="">Web Developer</option>
+            <option value="">Student</option>
+          </select>
+        </label>
+        <label class="choose">
+          Would you recommend Herald College Kathmandu to a friend?
+          <label> <input type="radio" name="ch" value="yes" />Yes </label>
+          <label> <input type="radio" name="ch" value="no" />No </label>
+          <label> <input type="radio" name="ch" value="maybe" />Maybe </label>
+        </label>
+        <label class="check">
+          Languages and Frameworks known (Check all that apply)
+          <label><input type="checkbox" />C</label>
+          <label><input type="checkbox" />C++</label>
+          <label><input type="checkbox" />Java</label>
+          <label><input type="checkbox" />Python</label>
+          <label><input type="checkbox" />Javascript</label>
+          <label><input type="checkbox" />React</label>
+          <label><input type="checkbox" />Angular</label>
+          <label><input type="checkbox" />Django</label>
+          <label><input type="checkbox" />Spring</label>
+        </label>
+        <textarea name="" id="" cols="30" rows="10">
+Any comments or suggestions?</textarea
+        >
+        <br />
+        <button class="btn">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
